@@ -1,0 +1,24 @@
+{
+  "name": "svelte-use-mousetrap",
+  "version": "1.0.0",
+  "description": "Use mousetrap in svelte",
+  "main": "index.js",
+  "repository": "https://github.com/wareset/svelte-use-mousetrap.git",
+  "author": "wareset <git@wareset.com>",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "svelte",
+    "mousetrap"
+  ],
+  "peerDependencies": {
+    "svelte": "3.x"
+  },
+  "dependencies": {
+    "mousetrap": "^1.6.5"
+  }
+}
