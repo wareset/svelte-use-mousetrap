@@ -1,24 +1,37 @@
 {
   "name": "svelte-use-mousetrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use mousetrap in svelte",
-  "main": "index.js",
   "repository": "https://github.com/wareset/svelte-use-mousetrap.git",
   "author": "wareset <git@wareset.com>",
   "license": "MIT",
+  "main": "index",
+  "module": "index.mjs",
+  "types": "index.d.ts",
   "files": [
+    "README.md",
+    "__types__",
+    "index.d.ts",
     "index.js",
-    "LICENSE",
-    "README.md"
+    "index.mjs"
   ],
   "keywords": [
     "svelte",
     "mousetrap"
   ],
+  "scripts": {
+    "dester": "dester ./src ./",
+    "build": "npm run -s dester",
+    "dev": "npm run -s dester -- -w"
+  },
   "peerDependencies": {
     "svelte": "3.x"
   },
   "dependencies": {
     "mousetrap": "^1.6.5"
+  },
+  "devDependencies": {
+    "dester": "0.1.2",
+    "typescript": "4.x"
   }
 }

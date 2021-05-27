@@ -1,12 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var Mousetrap = require('mousetrap');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var Mousetrap__default = /*#__PURE__*/_interopDefaultLegacy(Mousetrap);
+import Mousetrap from 'mousetrap';
 
 const isFunc = (v) => typeof v === 'function';
 const isArr = Array.isArray;
@@ -45,7 +37,7 @@ function use(
 
 
  {
-  const mousetrap = new Mousetrap__default['default'](window.document);
+  const mousetrap = new Mousetrap(window.document);
 
   const destroy = () => {
     mousetrap.reset();
@@ -59,4 +51,4 @@ function use(
   return { update, destroy }
 }
 
-exports.default = use;
+export default use;
